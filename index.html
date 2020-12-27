@@ -1,199 +1,505 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Jekyll v4.1.1">
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Green City Pramuka Apartment</title>
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
-
-  <!-- Bootstrap core CSS -->
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-  <!-- Custom styles for this template -->
-  <link href="product.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <nav class="site-header sticky-top py-1">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2" href="#" aria-label="Product">
-        <svg xmlns="logo.svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"
-          focusable="false">
-          <title>Product</title>
-          <circle cx="12" cy="12" r="10" />
-          <path
-            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-        </svg>
-      </a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
-    </div>
-  </nav>
-
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 font-weight-normal">Punny headline</h1>
-      <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with
-        this example based on Apple’s marketing pages.</p>
-      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-    </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+  <header id="home">
+    <div class="container">
+      <div class="hamburger-menu">
+        <i class="fas fa-bars toggle"></i>
+        <i class="fas fa-times toggle"></i>
       </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="container py-5">
-    <div class="row">
-      <div class="col-12 col-md">
-        <svg xmlns="logo.svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"
-          focusable="false">
-          <title>Product</title>
-          <circle cx="12" cy="12" r="10" />
-          <path
-            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-        </svg>
-        <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-          <li><a class="text-muted" href="#">Random feature</a></li>
-          <li><a class="text-muted" href="#">Team feature</a></li>
-          <li><a class="text-muted" href="#">Stuff for developers</a></li>
-          <li><a class="text-muted" href="#">Another one</a></li>
-          <li><a class="text-muted" href="#">Last time</a></li>
+      <nav class="d-flex align-items-center justify-content-center py-4">
+        <ul class="nav-list text-center p-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chefs">Contact Us</a>
+          </li>
         </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Resource</a></li>
-          <li><a class="text-muted" href="#">Resource name</a></li>
-          <li><a class="text-muted" href="#">Another resource</a></li>
-          <li><a class="text-muted" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Business</a></li>
-          <li><a class="text-muted" href="#">Education</a></li>
-          <li><a class="text-muted" href="#">Government</a></li>
-          <li><a class="text-muted" href="#">Gaming</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
-        </ul>
+      </nav>
+      <div class="hero-text w-100 text-white px-2 px-sm-0">
+        <img class="img-fluid py-2" src="img/logo-green-pramuka.png" alt="" width="200" height="200"
+          style="filter:brightness(0) invert(1)">
+        <p class="lead mb-4 display-4 header-text">Hunian Praktis di Pusat Jakarta</p>
+        <a class="btn px-5 mr-2" href="#">Explore</a>
+        <a class="btn px-5 ml-2" href="#">Book a meeting</a>
       </div>
     </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row align-items-lg-center">
+          <div class="col-12 col-md-6 text-center text-md-left" data-aos="fade-right">
+            <div class="section-heading mb-3">
+              <h4>Discover</h4>
+              <h1 class="display-5">Green Pramuka City Apartment</h1>
+            </div>
+            <p>
+              Green Pramuka City merupakan hunian strategis yang berlokasi di Jakarta Pusat dengan luas 12,9 hektar,
+              mengusung konsep one stop living environment dengan 70% ruang terbuka serta pengelolaan lingkungan
+              berkelanjutan.
+              <br><br>
+              Aksesibilitas lokasi tidak perlu diragukan lagi. Dapat diakses melalui jalan protokol A. Yani, serta dua
+              keluar/masuk pintu tol Rawamangun dan Pulomas, serta ketersediaan pool Damri & Halte Busway hanya
+              selangkah dari
+              Apartemen Green Pramuka City.
+            </p>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-left">
+            <img class="img-fluid rounded" src="img/Gallery-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-heading my-5 text-center">
+          <h4 class="text-white">Benefit</h4>
+          <h1 class="display-4">Alasan Memilih Kami</h1>
+        </div>
+        <div class="row text-center text-white">
+          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-left">
+            <div class="shop-info">
+              <i class="fas fa-swimming-pool mb-3"></i>
+              <h1 class="mb-4">Fasilitas Lengkap</h1>
+              <p>Beragam fasilitas yang sudah siap pakai di Green Pramuka City, antara lain Giant Swimming Pool,
+                Children Playground,
+                Jogging Track, dan lainnya.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-up">
+            <div class="shop-info">
+              <i class="far fa-building mb-3"></i>
+              <h1 class="mb-4">Terintegrasi</h1>
+              <p>Kawasan terintegrasi satu dengan yang lainnya antara tempat tinggal, perkantoran, commercial area, dan
+                pusat
+                perbelanjaan dalam satu areal.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-right">
+            <div class="shop-info">
+              <!-- <i class="fas fa-mobile-alt mb-3"></i> -->
+              <i class="fas fa-map-marked-alt mb-3"></i>
+              <h1 class="mb-4">Lokasi Strategis</h1>
+              <p>Green Pramuka City terletak di Jalan Protokol Jend. A Yani, Jakarta Pusat, yang memiliki aksesibilitas
+                terbaik menuju
+                seluruh penjuru kota Jakarta.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="my-5" />
+      </div>
+
+      <div class="container">
+        <div class="row align-items-lg-center">
+          <div class="col-6 col-md-6 d-none d-lg-block" data-aos="fade-up">
+            <img class="img-fluid rounded" src="img/Gallery-1.jpg" alt="">
+          </div>
+          <div class="col-12 col-lg-6 text-center text-lg-left" data-aos="fade-up">
+            <div class="section-heading mb-3">
+              <h1 class="display-5">Fasilitas Hunian</h1>
+            </div>
+
+            <div class="row fasilitas">
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fas fa-mosque pr-2"></i>
+                Tempat Ibadah
+              </div>
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fas fa-stethoscope pr-2"></i>
+                Klinik Kesehatan
+              </div>
+            </div>
+
+            <div class="row fasilitas">
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fas fa-swimmer pr-2"></i>
+                Kolam Renang
+              </div>
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fas fa-parking pr-2"></i>
+                Parkir Basement
+              </div>
+            </div>
+
+            <div class="row fasilitas">
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fab fa-fort-awesome pr-2"></i>
+                Taman Bermain Anak
+              </div>
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fas fa-taxi pr-2"></i>
+                Shelter Transportasi Online
+              </div>
+            </div>
+
+            <div class="row fasilitas">
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fas fa-walking pr-2"></i>
+                Commercial Park Area
+              </div>
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fas fa-store pr-2"></i>
+                Pusat Belanja
+              </div>
+            </div>
+
+            <div class="row fasilitas">
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fas fa-bus pr-2"></i>
+                Feeder Damri
+              </div>
+              <div class="col-md-6 py-1 py-md-3">
+                <i class="fas fa-user-clock pr-2"></i>
+                Keamanan dan Akses 24-Jam
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="chef" id="chef">
+      <div class="container">
+        <div class="section-heading my-5 text-center">
+          <h4>Details</h4>
+          <h1 class="display-4">Spesifikasi Unit</h1>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Konstruksi
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+
+              <table class="table">
+
+                <tbody style="text-transform: capitalize; border-color: rgba(255, 255, 255, 0);">
+                  <tr style=" background-color: #E0F7FA;">
+                    <th scope="row">1</th>
+                    <td>Pondasi</td>
+                    <td>Tiang beton bertulang</td>
+                  </tr>
+                  <tr style=" background-color: #B2EBF2;">
+                    <th scope="row">2</th>
+                    <td>Struktur bangunan dinding</td>
+                    <td>Beton bertulang</td>
+                  </tr>
+                  <tr style=" background-color: #80DEEA;">
+                    <th scope="row">3</th>
+                    <td>Dinding eksternal</td>
+                    <td>Dinding beton precast / bata ringan</td>
+                  </tr>
+                  <tr style=" background-color: #4DD0E1;">
+                    <th scope="row">4</th>
+                    <td>Dinding internal</td>
+                    <td>Bata ringan / gypsum board</td>
+                  </tr>
+                  <tr style=" background-color: #26C6DA;">
+                    <th scope="row">5</th>
+                    <td>Atap</td>
+                    <td>Beton bertulang</td>
+                  </tr>
+                  <tr style=" background-color: #00BCD4;">
+                    <th scope="row">6</th>
+                    <td>Plafond</td>
+                    <td>Beton expose / calsiboard finishing cat</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Sanitair
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <!-- <div class="accordion-body"> -->
+
+              <table class="table">
+
+                <tbody style="text-transform: capitalize; border-color: rgba(255, 255, 255, 0);">
+                  <tr style=" background-color: #E0F2F1;">
+                    <th scope="row">1</th>
+                    <td>Kamar mandi</td>
+                    <td>Kloset duduk merk TOTO / setara + hand shower</td>
+                  </tr>
+                  <tr style=" background-color: #B2DFDB;">
+                    <th scope="row">2</th>
+                    <td>Tempat cuci piring</td>
+                    <td>Box sink & kran dinding</td>
+                  </tr>
+                  <tr style=" background-color: #80CBC4;">
+                    <th scope="row">3</th>
+                    <td>Daya listrik</td>
+                    <td>900VA (1BR) / 1300VA (2BR)</td>
+                  </tr>
+                  <tr style=" background-color: #4DB6AC;">
+                    <th scope="row">4</th>
+                    <td>Air bersih</td>
+                    <td>Standar PDAM</td>
+                  </tr>
+                  <tr style=" background-color: #26A69A;">
+                    <th scope="row">5</th>
+                    <td>Peralatan antisipasi kebakaran</td>
+                    <td>Springkler, smoke & heat detector</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Finishing
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+
+              <table class="table">
+
+                <tbody style="text-transform: capitalize; border-color: rgba(255, 255, 255, 0);">
+                  <tr style=" background-color: #F1F8E9;">
+                    <th scope="row">1</th>
+                    <td>Dinding</td>
+                    <td>Cat tembok</td>
+                  </tr>
+                  <tr style=" background-color: #DCEDC8;">
+                    <th scope="row">2</th>
+                    <td>Dinding internal</td>
+                    <td>Cat tembok</td>
+                  </tr>
+                  <tr style=" background-color: #C5E1A5;">
+                    <th scope="row">3</th>
+                    <td>Ruang tamu & ruang tidur</td>
+                    <td style="text-transform:none;">Keramik s/d Plafond</td>
+                  </tr>
+                  <tr style=" background-color: #AED581;">
+                    <th scope="row">4</th>
+                    <td>Kamar mandi</td>
+                    <td>Cat weather shield</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Lantai
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
+
+              <table class="table">
+
+                <tbody style="text-transform: capitalize; border-color: rgba(255, 255, 255, 0);">
+                  <tr style=" background-color: #FFECB3;">
+                    <th scope="row">1</th>
+                    <td>Ruang tamu & ruang tidur</td>
+                    <td>Homogenous tile</td>
+                  </tr>
+                  <tr style=" background-color: #FFE082;">
+                    <th scope="row">2</th>
+                    <td>Kamar mandi</td>
+                    <td>Keramik</td>
+                  </tr>
+                  <tr style=" background-color: #FFD54F;">
+                    <th scope="row">3</th>
+                    <td>Balkon</td>
+                    <td>Keramik</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Jendela
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample">
+
+              <table class="table">
+
+                <tbody style="text-transform: capitalize; border-color: rgba(255, 255, 255, 0);">
+                  <tr style=" background-color: #FFCC80;">
+                    <th scope="row">1</th>
+                    <td>Kusen</td>
+                    <td>UPVC</td>
+                  </tr>
+                  <tr style=" background-color: #FFB74D;">
+                    <th scope="row">2</th>
+                    <td>Kaca</td>
+                    <td>Clear</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Pintu
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample">
+
+              <table class="table">
+
+                <tbody style="text-transform: capitalize; border-color: rgba(255, 255, 255, 0);">
+                  <tr style=" background-color: #FFCCBC;">
+                    <th scope="row">1</th>
+                    <td>Pintu utama & pintu kamar tidur</td>
+                    <td>Engineering door & kusen UPVC</td>
+                  </tr>
+                  <tr style=" background-color: #FFAB91;">
+                    <th scope="row">2</th>
+                    <td>Pintu kamar mandi</td>
+                    <td>PVC & kusen PVC</td>
+                  </tr>
+                  <tr style=" background-color: #FF8A65;">
+                    <th scope="row">3</th>
+                    <td>Pintu balkon</td>
+                    <td>Pintu kaca rangka UPVC & kusen UPVC</td>
+                  </tr>
+                  <tr style=" background-color: #FF7043;">
+                    <th scope="row">4</th>
+                    <td>Lain - Lain</td>
+                    <td>Access card</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide py-5" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="caro-1"></div>
+            <div class="carousel-item" id="caro-2"></div>
+            <div class="carousel-item" id="caro-3"></div>
+            <div class="carousel-item" id="caro-4"></div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+    </section>
+
+
+
+    <footer class="text-center py-5">
+      <div class="container">
+        Hubungi Kami <br>
+        <div class="d-grid gap-5 d-sm-block justify-content-center">
+          <button class="btn" type="button" style="border: 0; width: auto;">
+            <a href="mailto:gusti@greenpramuka-apartment.com">
+              <i class="fas fa-envelope fa-2x px-2" style="color: rgba(255,255,255,0.5);"></i>
+            </a>
+          </button>
+          <button class="btn" type="button" style="border: 0; width: auto;">
+            <a href="https://wa.me/6285697275056">
+              <i class="fab fa-whatsapp fa-2x px-2" style="color: rgba(255,255,255,0.5);"></i>
+            </a>
+          </button>
+        </div>
+        <!-- <a style="color: rgba(255,255,255,0.5);" href="mailto:gusti@greenpramuka-apartment.com" role="button">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a style="color: rgba(255,255,255,0.5);" href="mailto:gusti@greenpramuka-apartment.com" role="button">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a> -->
+      </div>
+
+
+      &copy; Green City Pramuka Apartment. All Rights Reserved
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script> -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="scripts.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>
