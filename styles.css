@@ -31,24 +31,6 @@ header > .container {
   padding: 0;
 }
 
-/* HEADER NAVBAR-BRAND */
-
-.navbar-brand {
-  position: absolute;
-  width: 100%;
-  max-width: 1000;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: opacity 0.65s;
-}
-
-.navbar-brand:hover {
-  opacity: 0.5;
-}
-
-
-
 /* HEADER HAMBURGER-MENU */
 
 .hamburger-menu {
@@ -154,7 +136,7 @@ header > .container {
   left: 100%;
 }
 
-/* ABOUT SECTION  .SECTION-HEADING*/
+/* DISCOVER SECTION  .SECTION-HEADING*/
 
 .section-heading h4 {
   text-transform: uppercase;
@@ -170,41 +152,42 @@ header > .container {
   color: #BBA35F;
 }
 
-.about .btn {
+.discover .btn {
   width: 150px;
   color: #BBA35F !important;
   transition: background-color 0.65s;
 }
 
-.about .btn:hover {
+.discover .btn:hover {
   color: #fff !important;
   background-color: #BBA35F;
 }
 
-/* Menu */
-.menu {
+/* BENEFIT SECTION */
+
+.benefit {
   background-color: #101d2c;
 }
 
-.shop-info i {
+.benefit-info i {
   color: #BBA35F;
   font-size: 50px;
 }
 
-.shop-info h1 {
+.benefit-info h1 {
   font-family: "Teko", sans-serif;
   font-size: 25px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.shop-info p,
-.shop-info address {
+.benefit-info p,
+.benefit-info address {
   color: rgba(255, 255, 255, 0.5);
 }
 
 hr {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 3px solid rgba(255, 255, 255, 0.05);
 }
 
 .fasilitas {
@@ -233,11 +216,23 @@ hr {
 }
 
 #caro-4 {
-    background: url(img/Gallery-4.jpg) center / cover no-repeat fixed;
+    background: url(img/Gallery-6.jpg) center / cover no-repeat fixed;
+}
+
+#caro-5 {
+    background: url(img/Gallery-9.jpg) center / cover no-repeat fixed;
+}
+
+#caro-6 {
+    background: url(img/Gallery-10.jpg) center / cover no-repeat fixed;
+}
+
+#caro-7 {
+    background: url(img/Gallery-11.jpg) center / cover no-repeat fixed;
 }
 
 
-
+/* 
 .point-right,
 .point-left {
   position: relative;
@@ -274,11 +269,11 @@ hr {
   letter-spacing: 1px;
   font-family: "Teko", sans-serif;
   font-weight: 300;
-}
+} */
 
 /* Chef section */
 
-.card-body h1{
+/* .card-body h1{
   font-size: 25px;
   letter-spacing: 1px;
   font-family: 'Teko', sans-serif;
@@ -288,7 +283,7 @@ hr {
 .card-body h6{
   font-size: 16px;
   color: #BBA35F;
-}
+} */
 
 footer {
   background-color: #101d2c;
@@ -300,23 +295,19 @@ footer i:hover {
 }
 
 @media (min-width: 576px) {
-  .navbar-brand {
-    max-width: 150px;
-  }
-
   .hamburger-menu {
     top: 35px;
     right: 25px;
   }
 
-  .point-left::before,
+  /* .point-left::before,
   .point-right::before {
     display: none;
-  }
+  } */
 
-  .menu-item-desc {
+  /* .menu-item-desc {
     padding: 50px 20px;
-  }
+  } */
 }
 
 @media (min-width: 768px) {
@@ -332,11 +323,6 @@ footer i:hover {
 
   .hamburger-menu {
     display: none;
-  }
-
-  .navbar-brand {
-    position: initial;
-    transform: initial;
   }
 
   .nav-list {
@@ -383,8 +369,8 @@ footer i:hover {
   }
 }
 
-@media (min-width: 1200px) {
-  .point-left::before,
+/* @media (min-width: 1200px) { */
+  /* .point-left::before,
   .point-right::before {
     display: block;
     top: 50%;
@@ -398,9 +384,9 @@ footer i:hover {
 
   .point-right::before{
     right: -12px;
-  }
+  } */
 
-  .menu-item-desc p{
+  /* .menu-item-desc p{
     display: none;
   }
 
@@ -408,4 +394,4 @@ footer i:hover {
     color: #fff !important;
     background-color: #BBA35F;
   }
-}
+} */
