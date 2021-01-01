@@ -136,7 +136,8 @@ header > .container {
   left: 100%;
 }
 
-/* DISCOVER SECTION  .SECTION-HEADING*/
+/* DISCOVER SECTION
+-------------------------------------------------- */
 
 .section-heading h4 {
   text-transform: uppercase;
@@ -152,18 +153,17 @@ header > .container {
   color: #BBA35F;
 }
 
-.discover .btn {
-  width: 150px;
-  color: #BBA35F !important;
-  transition: background-color 0.65s;
+.dots {
+  position: absolute;
+  z-index: -1;
+  bottom: -50px;
+  right: -50px;
+  fill: #BBA35F;
 }
 
-.discover .btn:hover {
-  color: #fff !important;
-  background-color: #BBA35F;
-}
 
-/* BENEFIT SECTION */
+/* BENEFIT SECTION
+-------------------------------------------------- */
 
 .benefit {
   background-color: #101d2c;
@@ -194,13 +194,29 @@ hr {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.testing {
-    background: url(img/Gallery-3.jpg) center / cover no-repeat fixed;
-    padding: 0% 100px;
+.fasilitas a {
+  color: #101d2c;
 }
 
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 500px;
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+  object-fit: cover;
 }
 
 #caro-1{
@@ -231,60 +247,58 @@ hr {
     background: url(img/Gallery-11.jpg) center / cover no-repeat fixed;
 }
 
+/* CARDS
+-------------------------------------------------- */
 
-/* 
-.point-right,
-.point-left {
-  position: relative;
-  background-color: #fff;
-  display: flex;
+.row {
+  text-align: center;
 }
 
-.point-left::before,
-.point-right::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: inherit;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  z-index: 1;
+.card img {
+  height: 25rem;
+  object-fit: cover;
 }
 
-.menu-item-desc {
-  padding: 50px 10px;
-  color: #212529;
-  margin: auto;
+.card-body p {
+  padding: 0.2rem;
 }
 
-.menu-item-desc h6 {
-  color: #c69969;
-}
-
-.menu-item-desc h1 {
-  color: #101d2c;
-  font-size: 30px;
-  letter-spacing: 1px;
-  font-family: "Teko", sans-serif;
-  font-weight: 300;
-} */
-
-/* Chef section */
-
-/* .card-body h1{
-  font-size: 25px;
-  letter-spacing: 1px;
-  font-family: 'Teko', sans-serif;
-  font-weight: 300;
-}
-
-.card-body h6{
-  font-size: 16px;
+.card-footer .btn-outline-primary {
   color: #BBA35F;
-} */
+  width: auto;
+}
 
+.card-footer .btn-outline-primary:hover {
+  background-color: #BBA35F;
+  border-color: #BBA35F;
+  color: #fff;
+}
+
+/* ROOM TOUR
+-------------------------------------------------- */
+.room-tour {
+  background-color: #101d2c;
+}
+
+/* FAQ
+-------------------------------------------------- */
+.faq {
+  background-color: #fff;
+}
+
+/* FLOATING ICON
+-------------------------------------------------- */
+.icon-btn {
+  width: auto;
+  border-radius:50px;
+  right: 30px;
+  bottom: 30px;
+  position: fixed;
+  border-width: 0;
+}
+
+/* FOOTER
+-------------------------------------------------- */
 footer {
   background-color: #101d2c;
   color: rgba(255,255,255,0.5);
@@ -294,25 +308,35 @@ footer i:hover {
     color: #fff;
 }
 
+/* MEDIA SIZES
+-------------------------------------------------- */
+
 @media (min-width: 576px) {
   .hamburger-menu {
     top: 35px;
     right: 25px;
   }
 
-  /* .point-left::before,
-  .point-right::before {
+  .dots {
     display: none;
-  } */
+  }
 
-  /* .menu-item-desc {
-    padding: 50px 20px;
-  } */
+  .icon-btn {
+    right: 10px;
+  }
 }
 
 @media (min-width: 768px) {
   .btn {
     width: 150px;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  .icon-btn {
+    right: 10px;
   }
 }
 
@@ -366,6 +390,14 @@ footer i:hover {
 
   .nav-link:hover::before {
     transform: scaleX(1);
+  }
+
+  .dots {
+    display: block;
+  }
+
+  .icon-btn {
+    right: 30px;
   }
 }
 
