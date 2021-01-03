@@ -159,6 +159,7 @@ header > .container {
   bottom: -50px;
   right: -50px;
   fill: #BBA35F;
+  display: none;
 }
 
 
@@ -191,61 +192,97 @@ hr {
 }
 
 .fasilitas {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .fasilitas a {
   color: #101d2c;
 }
 
+/* ROOM TOUR
+-------------------------------------------------- */
+
+.card {
+  border-width: 0;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
+.carousel-image {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
+/* CUSTOMIZE THE MODAL
+-------------------------------------------------- */
+.carousel-image:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
   left: 0;
-  min-width: 100%;
-  height: 32rem;
-  object-fit: cover;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-#caro-1{
-    background: url(img/Gallery-1.jpg) center / cover no-repeat fixed ;
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 100%;
 }
 
-#caro-2 {
-    background: url(img/Gallery-2.jpg) center / cover no-repeat fixed;
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
-#caro-3 {
-    background: url(img/Gallery-3.jpg) center / cover no-repeat fixed;
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
-#caro-4 {
-    background: url(img/Gallery-6.jpg) center / cover no-repeat fixed;
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
 }
 
-#caro-5 {
-    background: url(img/Gallery-9.jpg) center / cover no-repeat fixed;
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-#caro-6 {
-    background: url(img/Gallery-10.jpg) center / cover no-repeat fixed;
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-#caro-7 {
-    background: url(img/Gallery-11.jpg) center / cover no-repeat fixed;
-}
 
 /* CARDS
 -------------------------------------------------- */
@@ -274,10 +311,18 @@ hr {
   color: #fff;
 }
 
+iframe {
+  padding-top: 1rem;
+}
+
 /* ROOM TOUR
 -------------------------------------------------- */
 .room-tour {
   background-color: #101d2c;
+}
+
+.room-tour h4 {
+  color: #fff;
 }
 
 /* FAQ
@@ -290,11 +335,22 @@ hr {
 -------------------------------------------------- */
 .icon-btn {
   width: auto;
-  border-radius:50px;
-  right: 30px;
-  bottom: 30px;
+  border-radius: 1rem;
+  right: 2%;
+  bottom: 4%;
   position: fixed;
   border-width: 0;
+}
+
+.icon-btn span {
+  display: none;
+  padding-right: 10px;
+}
+
+.icon-btn i {
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* FOOTER
@@ -304,8 +360,12 @@ footer {
   color: rgba(255,255,255,0.5);
 }
 
-footer i:hover {
-    color: #fff;
+.footer-btn .col-1 {
+  width: auto;
+}
+
+.footer-btn i {
+  font-size: 1.5rem;
 }
 
 /* MEDIA SIZES
@@ -317,13 +377,6 @@ footer i:hover {
     right: 25px;
   }
 
-  .dots {
-    display: none;
-  }
-
-  .icon-btn {
-    right: 10px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -331,13 +384,10 @@ footer i:hover {
     width: 150px;
   }
 
-  .dots {
-    display: none;
+  .icon-btn span {
+    display: inline-block;
   }
 
-  .icon-btn {
-    right: 10px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -396,10 +446,22 @@ footer i:hover {
     display: block;
   }
 
-  .icon-btn {
-    right: 30px;
+  .close {
+    left: 95%;
+  }
+
+  .modal-content {
+    max-width: 600px;
   }
 }
+
+/* @media (max-width: 1028px) {
+
+  .close {
+    right: 0px;
+    left: 35px;
+  }
+} */
 
 /* @media (min-width: 1200px) { */
   /* .point-left::before,
