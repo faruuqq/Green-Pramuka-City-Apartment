@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Teko:300,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-nav a {
+/* nav a {
   color: #fff !important;
-}
+} */
+
 
 p {
   margin: 0;
@@ -25,15 +26,21 @@ header {
   position: relative;
 }
 
-header > .container {
+header > .container-fluid {
   position: relative;
   height: 100%;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  /* padding: 0; */
+}
+
+.navbar-toggler {
+  border-width: 3px;
 }
 
 /* HEADER HAMBURGER-MENU */
 
-.hamburger-menu {
+/* .hamburger-menu {
   position: fixed;
   top: 25px;
   right: 15px;
@@ -54,21 +61,21 @@ header > .container {
 
 .hamburger-menu .fa-times {
   display: none;
-}
+} */
 
 /* TOGGLE MENU */
 
-.hamburger-menu .fa-times.open {
+/* .hamburger-menu .fa-times.open {
   display: block;
 }
 
 .hamburger-menu .fa-bars.open {
   display: none;
-}
+} */
 
 /* HEADER NAV-LIST */
 
-.nav-list {
+/* .nav-list {
   position: fixed;
   top: 0;
   left: 0;
@@ -88,7 +95,7 @@ header > .container {
 .nav-list.open {
   opacity: 1;
   transform: scale(1);
-}
+} */
 
 /* HEADER .HERO-TEXT */
 
@@ -343,7 +350,7 @@ iframe {
 }
 
 .icon-btn span {
-  display: none;
+  /* display: none; */
   padding-right: 10px;
 }
 
@@ -371,22 +378,22 @@ footer {
 /* MEDIA SIZES
 -------------------------------------------------- */
 
-@media (min-width: 576px) {
-  .hamburger-menu {
+/* @media (min-width: 576px) { */
+  /* .hamburger-menu {
     top: 35px;
     right: 25px;
-  }
+  } */
 
-}
+/* } */
 
 @media (min-width: 768px) {
   .btn {
     width: 150px;
   }
 
-  .icon-btn span {
+  /* .icon-btn span {
     display: inline-block;
-  }
+  } */
 
 }
 
@@ -395,11 +402,11 @@ footer {
     padding: 0 15px;
   }
 
-  .hamburger-menu {
+  /* .hamburger-menu {
     display: none;
-  }
+  } */
 
-  .nav-list {
+  /* .nav-list {
     position: initial;
     width: initial;
     height: initial;
@@ -440,7 +447,7 @@ footer {
 
   .nav-link:hover::before {
     transform: scaleX(1);
-  }
+  } */
 
   .dots {
     display: block;

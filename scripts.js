@@ -22,6 +22,15 @@ for (var i = 0; i < queryImage; i++) {
     captionText.innerHTML = this.alt;
   })
 }
+// var modal = $("#myModal");
+// var queryImage = $(".carousel-image").length;
+// for (var i = 0; i < queryImage; i++) {
+//   $(".carousel-image")[i].on("click", function () {
+//     modal.style.display = "block";
+//     $("#img01").src = this.src;
+//     $("#caption").html = this.alt
+//   });
+// };
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -34,3 +43,4 @@ span.onclick = function () {
 modal.onclick = function () {
   modal.style.display = "none";
 };
+
